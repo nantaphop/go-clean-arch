@@ -1,0 +1,23 @@
+version: "2"
+
+services: 
+  app: 
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes: 
+      - .:/go/src/github/nantaphop/go-clean-arch
+    working_dir: /go/src/github/nantaphop/go-clean-arch
+    ports: 
+      - 3000:3000
+    command: gaper
+  mongo:
+    image: mongo:4-xenial
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes: 
+      - ./db:/data/db
+    ports: 
+      - 27017:22222

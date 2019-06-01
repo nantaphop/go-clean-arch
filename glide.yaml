@@ -1,0 +1,4 @@
+package: github.com/nantaphop/go-clean-arch
+import:
+- package: github.com/gin-gonic/gin
+  version: ^1.4.0
