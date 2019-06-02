@@ -4,3 +4,6 @@ import:
   version: ^1.4.0
 - package: go.mongodb.org/mongo-driver
   version: ^1.0.2
+- package: golang.org/x/crypto
+  subpackages:
+  - bcrypt

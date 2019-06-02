@@ -22,8 +22,9 @@ func (d restUserDelivery) createUser(c *gin.Context) {
 	result, err := d.userUc.CreateUser(&u)
 	if err != nil {
 		c.JSON(400, gin.H{
-			"error": err,
+			"error": err.Error(),
 		})
+		return
 	}
 	c.JSON(200, gin.H{
 		"data": result,

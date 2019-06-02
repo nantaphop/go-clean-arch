@@ -1,18 +1,22 @@
-hash: f291b4012552b945f5e7a6f68950610ad9605b57640dd4405f5d0cbd38b47d0a
-updated: 2019-06-01T22:00:45.046873+07:00
+hash: 8c7656b841ccc4e40a09ee44a88f123340d4638966a84481d227602c07bb31ef
+updated: 2019-06-02T23:05:26.310329+07:00
 imports:
 - name: github.com/gin-contrib/sse
-  version: 5545eab6dad3bbbd6c5ae9186383c2a9d23c0dae
+  version: 54d8467d122d380a14768b6b4e5cd7ca4755938f
 - name: github.com/gin-gonic/gin
   version: b75d67cd51eb53c3c3a2fc406524c940021ffbda
   subpackages:
   - binding
   - internal/json
   - render
+- name: github.com/go-stack/stack
+  version: 2fee6af1a9795aafbe0253a0cfbdf668e1fb8a9a
 - name: github.com/golang/protobuf
   version: b285ee9cfc6c881bb20c0d8dc73370ea9b9ec90f
   subpackages:
   - proto
+- name: github.com/golang/snappy
+  version: 2a8bb927dd31d8daada140a5d09578521ce5c36a
 - name: github.com/json-iterator/go
   version: 08047c174c6c03e8ec963a411bde1b6d1ee67b26
 - name: github.com/mattn/go-isatty
@@ -25,12 +29,61 @@ imports:
   version: 79e5e7c8411350e89bcad8ff77d7503219d92ed6
   subpackages:
   - codec
+- name: github.com/xdg/scram
+  version: 7eeb5667e42c09cb51bf7b7c28aea8c56767da90
+- name: github.com/xdg/stringprep
+  version: 73f8eece6fdcd902c185bf651de50f3828bed5ed
 - name: go.mongodb.org/mongo-driver
   version: be02c9f9ce6b45d6e845492277a232afd6956cc3
+  subpackages:
+  - bson
+  - bson/bsoncodec
+  - bson/bsonrw
+  - bson/bsontype
+  - bson/primitive
+  - event
+  - internal
+  - mongo
+  - mongo/options
+  - mongo/readconcern
+  - mongo/readpref
+  - mongo/writeconcern
+  - tag
+  - version
+  - x/bsonx
+  - x/bsonx/bsoncore
+  - x/mongo/driver
+  - x/mongo/driver/auth
+  - x/mongo/driver/auth/internal/gssapi
+  - x/mongo/driver/session
+  - x/mongo/driver/topology
+  - x/mongo/driver/uuid
+  - x/network/address
+  - x/network/command
+  - x/network/compressor
+  - x/network/connection
+  - x/network/connstring
+  - x/network/description
+  - x/network/result
+  - x/network/wiremessage
+- name: golang.org/x/crypto
+  version: 20be4c3c3ed52bfccdb2d59a412ee1a936d175a7
+  subpackages:
+  - bcrypt
+  - pbkdf2
+- name: golang.org/x/sync
+  version: 112230192c580c3556b8cee6403af37a4fc5f28c
+  subpackages:
+  - semaphore
 - name: golang.org/x/sys
-  version: 4c3a928424d249a1013e789cf5e458d480bcba16
+  version: 4c4f7f33c9ed00de01c4c741d2177abfcfe19307
   subpackages:
   - unix
+- name: golang.org/x/text
+  version: 342b2e1fbaa52c93f31447ad2c6abc048c63e475
+  subpackages:
+  - transform
+  - unicode/norm
 - name: gopkg.in/go-playground/validator.v8
   version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
 - name: gopkg.in/yaml.v2
