@@ -1,0 +1,4 @@
+FROM golang:1.12.5-alpine
+RUN apk add --no-cache git
+RUN go get -u github.com/maxcnunes/gaper/cmd/gaper
+RUN apk del git

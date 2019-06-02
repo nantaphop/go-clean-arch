@@ -4,10 +4,10 @@ services:
   app: 
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.local
     volumes: 
-      - .:/go/src/github/nantaphop/go-clean-arch
-    working_dir: /go/src/github/nantaphop/go-clean-arch
+      - .:/go/src/github.com/nantaphop/go-clean-arch
+    working_dir: /go/src/github.com/nantaphop/go-clean-arch
     ports: 
       - 3000:3000
     command: gaper
@@ -18,6 +18,6 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes: 
-      - ./db:/data/db
+      - ./.db:/data/db
     ports: 
       - 22222:27017

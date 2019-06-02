@@ -1,5 +1,5 @@
-hash: e2b52819007670ab197abb8c1ee5d758636079fc55a361c000f47c11284a298f
-updated: 2019-06-01T15:43:28.245764+07:00
+hash: f291b4012552b945f5e7a6f68950610ad9605b57640dd4405f5d0cbd38b47d0a
+updated: 2019-06-01T22:00:45.046873+07:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 5545eab6dad3bbbd6c5ae9186383c2a9d23c0dae
@@ -25,6 +25,8 @@ imports:
   version: 79e5e7c8411350e89bcad8ff77d7503219d92ed6
   subpackages:
   - codec
+- name: go.mongodb.org/mongo-driver
+  version: be02c9f9ce6b45d6e845492277a232afd6956cc3
 - name: golang.org/x/sys
   version: 4c3a928424d249a1013e789cf5e458d480bcba16
   subpackages:

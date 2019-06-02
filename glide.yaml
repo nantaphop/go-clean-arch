@@ -2,3 +2,5 @@ package: github.com/nantaphop/go-clean-arch
 import:
 - package: github.com/gin-gonic/gin
   version: ^1.4.0
+- package: go.mongodb.org/mongo-driver
+  version: ^1.0.2
